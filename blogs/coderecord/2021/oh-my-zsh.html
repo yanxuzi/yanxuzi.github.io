@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>centos7安装zsh和oh-my-zsh | yanxuzi</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="一个个人站点">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.a5fc1f3a.css" as="style"><link rel="preload" href="/assets/js/app.4d738638.js" as="script"><link rel="preload" href="/assets/js/3.2e41d282.js" as="script"><link rel="preload" href="/assets/js/1.72a8eba1.js" as="script"><link rel="preload" href="/assets/js/12.81b2b830.js" as="script"><link rel="prefetch" href="/assets/js/10.2d20667e.js"><link rel="prefetch" href="/assets/js/11.a6fd41dc.js"><link rel="prefetch" href="/assets/js/4.d21d138c.js"><link rel="prefetch" href="/assets/js/5.1f320fc8.js"><link rel="prefetch" href="/assets/js/6.e706aa3c.js"><link rel="prefetch" href="/assets/js/7.7f024e8e.js"><link rel="prefetch" href="/assets/js/8.dfcfc57a.js"><link rel="prefetch" href="/assets/js/9.645bbb10.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a5fc1f3a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>yanxuzi</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>一个个人站点</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>zhangyue</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="yanxuzi" class="logo"> <span class="site-name">yanxuzi</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/代码日记/" class="nav-link"><i class="undefined"></i>
+  代码日记
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    zhangyue
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>2</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>1</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/代码日记/" class="nav-link"><i class="undefined"></i>
+  代码日记
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>centos7安装zsh和oh-my-zsh</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>zhangyue</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div data-v-1156296a><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">centos7安装zsh和oh-my-zsh</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>zhangyue</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>6/16/2021</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>命令行</span></i></div></div> <div class="theme-reco-content content__default"><h3 id="centos7安装zsh和oh-my-zsh"><a href="#centos7安装zsh和oh-my-zsh" class="header-anchor">#</a> centos7安装zsh和oh-my-zsh</h3> <p>默认的/bin/bash使用体验只能说一般般，还是zsh配合oh-my-zsh使用体验更好，推荐大家有兴趣的都可以尝试一下，这里记录一下，方便后面自己在其他CentOS系统上安装配置。如果能够帮到正在看这篇博客的你那么也是极好的！</p> <ul><li>这篇博客是在CentOS 7.5系统上安装的，理论上大部分Linux发行版都可以安装（可能有细微的不同）。</li></ul> <p><em><strong>1*</strong>|<em><strong>0*****1、安装zsh和oh-my-zsh</strong></em></em><em>1*</em>*|***1***<strong>1.1 查看当前shell</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@staryjie ~]# echo $SHELL
+/bin/bash
+[root@staryjie ~]#
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>*<strong>1*</strong>|***2***<strong>1.2 安装zsh</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@staryjie ~]# yum install -y zsh
+已加载插件：fastestmirror
+Loading mirror speeds from cached hostfile
+正在解决依赖关系
+--&gt; 正在检查事务
+---&gt; 软件包 zsh.x86_64.0.5.0.2-34.el7_8.2 将被 安装
+--&gt; 解决依赖关系完成
+
+依赖关系解决
+
+========================================================================================================================
+ Package                架构                      版本                                 源                          大小
+========================================================================================================================
+正在安装:
+ zsh                    x86_64                    5.0.2-34.el7_8.2                     updates                    2.4 M
+
+事务概要
+========================================================================================================================
+安装  1 软件包
+
+总下载量：2.4 M
+安装大小：5.6 M
+Downloading packages:
+zsh-5.0.2-34.el7_8.2.x86_64.rpm                                                                  | 2.4 MB  00:00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  正在安装    : zsh-5.0.2-34.el7_8.2.x86_64                                                                         1/1
+  验证中      : zsh-5.0.2-34.el7_8.2.x86_64                                                                         1/1
+
+已安装:
+  zsh.x86_64 0:5.0.2-34.el7_8.2
+
+完毕！
+[root@staryjie ~]#
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><p>*<strong>1*</strong>|***3***<strong>1.3 查看系统中已经安装的shell</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@staryjie ~]# cat /etc/shells
+/bin/sh
+/bin/bash
+/sbin/nologin
+/usr/bin/sh
+/usr/bin/bash
+/usr/sbin/nologin
+/bin/zsh  # 已经安装
+[root@staryjie ~]#
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>*<strong>1*</strong>|***4***<strong>1.4 切换shell</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@staryjie ~]# chsh -s /bin/zsh
+Changing shell for root.
+Shell changed.
+[root@staryjie ~]#
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>*<strong>1*</strong>|***5***<strong>1.5 安装git</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yum install -y git
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>*<strong>1*</strong>|***6***<strong>1.6 安装oh-my-zsh（自动）</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="https://blog.owlow.cn:6070/usr/uploads/2021/06/758654233.png" alt=""></p> <p>到这里<code>oh-my-zsh</code>已经安装完成了。</p> <p>*<strong>1*</strong>|***7***<strong>1.7 手动安装(可选)</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><em><strong>2*</strong>|<em><strong>0*****2、配置和优化oh-my-zsh</strong></em></em><em>2*</em>*|*<strong>1*<strong><strong>2.1 修改主题</strong></strong>2.1.1 查看有哪些主题</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ls ~/.oh-my-zsh/themes/
+# 具体有哪些主题可以在  ~/.oh-my-zsh/themes/目录下查看。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><img src="https://blog.owlow.cn:6070/usr/uploads/2021/06/541122848.png" alt=""></p> <p><strong>2.1.2 修改主题</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>vim ~/.zshrc
+# ZSH_THEME 字段就是主题,根据上面查看到的主题中选一个自己喜欢的替换即可，默认主题是`robbyrussell`
+# 如果想每次进入shell的时候随机使用一款主题，那么可以设置 ZSH_THEME=&quot;random&quot;
+# 个人比较喜欢 xiong-chiamiov 这款主题
+# 修改完之后通过 source ~/.zshrc 即可让设置的主题生效，当然退出当前terminal重新登录也可以生效。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><img src="https://blog.owlow.cn:6070/usr/uploads/2021/06/3168839234.png" alt=""></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>source ~/.zshrc
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>查看生效之后的主题：</p> <p><img src="https://blog.owlow.cn:6070/usr/uploads/2021/06/1344858538.png" alt=""></p> <p>*<strong>2*</strong>|*<strong>2*<strong><strong>2.2 配置别名</strong></strong>2.2.1 oh-myzsh自带的别名(很强大)</strong></p> <p>别名的配置在我们克隆的目录中也可以找到推荐的用法。比如git的别名配置就在：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>cat ~/.oh-my-zsh/plugins/git/git.plugin.zsh
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>2.2.2 自定义别名</strong></p> <p>也可以自定义别名，只需要在<code>~/.zshrc</code>中通过<code>alias xx='xxxx'</code>的形式配置即可，建议放在<code>~/.zsrc</code>文件的最下面。</p> <p>*<strong>3*</strong>|***0***<strong>3、插件安装和推荐</strong></p> <p>oh-my-zsh下载的时候已经自带了很多的插件可以供我们使用，有一些其他比较好的插件也可以自己下载安装使用。</p> <p>在oh-my-zsh默认的配置中只启用了git插件：</p> <p><img src="https://blog.owlow.cn:6070/usr/uploads/2021/06/3658176649.png" alt=""></p> <p>*<strong>3*</strong>|***1***<strong>3.1 extract</strong></p> <p>提供一个 extract 命令，以及它的别名 x。功能是：一！键！解！压！你知道tar的四种写法吗？我也不知道，所以我装了这个。从今以后 tar, gz, zip, rar 全部使用 extract 命令解压，再也不用天天查 cheatsheet 啦！</p> <p>*<strong>3*</strong>|***2***<strong>3.2 rand-quote</strong></p> <p>提供一条 quote 命令，显示随机名言。和fortune的作用差不多，但是我感觉fortune上面大多是冷笑话，还是quote的内容比较有意思。</p> <p>当然这种东西很少有人会主动去按的。所以你可以在你的zshrc里面的最后一行加上quote，实现每次打开shell显示一条名言的效果～</p> <p>再进一步，安装一个cowsay，把quote | cowsay放到zshrc的最后一行。于是每次打开终端你就可以看到一头牛对你说：</p> <p>*<strong>3*</strong>|***3***<strong>3.3 themes</strong></p> <p>提供一条 theme 命令，用来随时手动切换主题。在想要尝试各种主题的时候很实用，不需要一直改 zshrc 然后重载。</p> <p>*<strong>3*</strong>|***4***<strong>3.4 gitignore</strong></p> <p>提供一条 gi 命令，用来查询 gitignore 模板。比如你新建了一个 python 项目，就可以用：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> gi python &gt; .gitignore 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>*<strong>3*</strong>|***5***<strong>3.5 cp</strong></p> <p>提供一个 cpv 命令，这个命令使用 rsync 实现带进度条的复制功能。</p> <p>*<strong>3*</strong>|***6***<strong>3.6 zsh_reload</strong></p> <p>提供一个 src 命令，重载 zsh。对于经常折腾 zshrc 的我，这条命令非常实用。</p> <p>*<strong>3*</strong>|***7***<strong>3.7 git-open</strong></p> <p>提供一个 git-open 命令，在浏览器中打开当前所在 git 项目的远程仓库地址。</p> <p>*<strong>3*</strong>|***8***<strong>3.8 z</strong></p> <p>提供一个 z 命令，在常用目录之间跳转。类似 autojump，但是不需要额外安装软件。</p> <p>*<strong>3*</strong>|***9***<strong>3.9 vi-mode</strong></p> <p>vim输入模式，非常强大，不用多说。</p> <p>*<strong>3*</strong>|***10***<strong>3.10 per-directory-history</strong></p> <p>开启之后在一个目录下只能查询到这个目录下的历史命令。按 Ctrl+g 开启/关闭。</p> <p>*<strong>3*</strong>|***11***<strong>3.11 command-not-found</strong></p> <p>当你输入一条不存在的命令时，会自动查询这条命令可以如何获得。</p> <p>*<strong>3*</strong>|***12***<strong>3.12 safe-paste</strong></p> <p>在你复制了一些网上或者自己的脚本到当前终端的时候这些脚本往往就会自动运行，很可能会造成一些系统故障之类的。这个插件就是为了防止这样的事情发生，当你粘贴一些脚本到终端时，它可以防止脚本立刻运行，给你检查和修改的机会。</p> <p>*<strong>3*</strong>|***13***<strong>3.13 colored-man-pages</strong></p> <p>当你使用man命令查看帮助文档的时候，这个插件可以给man文档提供不同的配色，使你看起来更加舒适和明了。</p> <p>*<strong>3*</strong>|***14***<strong>3.14 sudo</strong></p> <p>普通用户有时候需要执行一些命令需要在最前面加上sudo，但是很多时候我们会忘记加上它，有了这个插件，你只需要在输入完命令之后按两下<code>Esc</code>键，它会自动帮你加上sudo。</p> <p>*<strong>3*</strong>|***15***<strong>3.15 zsh-syntax-highlighting</strong></p> <p>代码语法高亮显示插件，毫无疑问，非常好用，但是需要自己安装。</p> <p>安装方法官方文档：https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md</p> <p>个人比较喜欢的安装方法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 1.进入oh-my-zsh自定义插件目录
+cd ~/.oh-my-zsh/custom/plugins
+# 2.拉取zsh-syntax-highlighting代码
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+# 3.在配置文件~/.zshrc中添加插件（注意：自定义安装的插件最好放在所有插件的最下方）
+plugins=(
+    git
+    wd
+    colored-man-pages
+    yum
+    bundler
+    rand-quote
+    extract
+    themes
+    gitignore
+    zsh_reload
+    per-directory-history
+    zsh-syntax-highlighting
+)
+# 4.使插件生效（在配置文件最后加上下面这一行代码）
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# 5.保存退出之后，source ~/.zshrc即可生效
+source ~/.zshrc
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>*<strong>3*</strong>|***16***<strong>3.16 zsh-autosuggestions</strong></p> <p>zsh的自动补全插件，可以根据你之前的使用习惯自动给你补全的建议，强烈建议安装。</p> <p>官方安装文档：https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md</p> <p>个人比较喜欢的安装方法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 1.进入oh-my-zsh自定义插件目录
+cd ~/.oh-my-zsh/custom/plugins
+# 2.拉取zsh-autosuggestions代码
+git clone https://github.com/zsh-users/zsh-autosuggestions
+# 3.在配置文件~/.zshrc中添加插件（注意：自定义安装的插件最好放在所有插件的最下方）
+plugins=(
+    git
+    wd
+    colored-man-pages
+    yum
+    bundler
+    rand-quote
+    extract
+    themes
+    gitignore
+    zsh_reload
+    per-directory-history
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+)
+# 4.保存退出之后，source ~/.zshrc即可生效
+source ~/.zshrc
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>当然还有其他非常优秀的插件，有兴趣的小伙伴可以去GitHub上找一下。</p> <blockquote><p>https://github.com/zsh-users （上面两个自己安装的插件都是这个大神开发的）</p></blockquote> <p>原文</p> <p>https://www.cnblogs.com/jie-fang/p/13437335.html</p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-70334359></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.4d738638.js" defer></script><script src="/assets/js/3.2e41d282.js" defer></script><script src="/assets/js/1.72a8eba1.js" defer></script><script src="/assets/js/12.81b2b830.js" defer></script>
+  </body>
+</html>
